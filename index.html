@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    #container {
+      background-color: #c5fa75;
+    }
+
+    /* .content {
+      display: none;
+      margin: 20px;
+    }
+
+    .content.active {
+      display: block;
+    } */
+
+    .hidden {
+      display: none;
+    }
+
+    .content-container {
+      position: relative;
+      overflow: hidden;
+      height: auto; /* Adjust if needed */
+    }
+    .navbar {
+      background-color: #c5fa75;
+    }
+  </style>
+  <style>
+    #nav {
+      height: 8vh;
+      width: 100%;
+      /* background-color: red; */
+      margin-top: 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    #nav h1 {
+      /* background-color: rgb(179, 255, 0); */
+      height: 100%;
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      font-family: monument;
+      font-size: 30px;
+      letter-spacing: -1px;
+    }
+    #nav h1::after {
+      font-family: "Gilroy";
+      font-weight: 500;
+      top: 22%;
+      right: 13%;
+    }
+    #nav h1::before {
+      font-family: "Gilroy";
+      font-weight: 500;
+      font-size: 22px;
+      position: absolute;
+      bottom: 22%;
+      right: 13%;
+    }
+
+    #nav h3 {
+      display: none;
+    }
+  </style>
+  <body class="body1">
+    <div id="container">
+      <!-- <div class="navbar">
+        <nav
+          class="dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
+        >
+          <div
+            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+          >
+            <div class="flex items-center space-x-3 rtl:space-x-reverse">
+              <span
+                class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >
+                Features
+              </span>
+            </div>
+            <div class="flex items-center space-x-3 rtl:space-x-reverse">
+              <span
+                class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >
+                Upgrade
+              </span>
+            </div>
+            <div class="flex items-center space-x-3 rtl:space-x-reverse">
+              <span
+                class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >
+                Blog
+              </span>
+            </div>
+            <div class="flex items-center space-x-3 rtl:space-x-reverse">
+              <span
+                class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >
+                Features
+              </span>
+            </div>
+          </div>
+        </nav>
+      </div> -->
+      <div id="nav">
+        <a href="#l1"><h1>Features</h1></a>
+
+        <a href="#l2"><h1>Upgrade</h1></a>
+        <h1>Blog</h1>
+
+        <h3><i class="ri-menu-line"></i></h3>
+      </div>
+      <div class="responsive-margin">
+        <h1 class="custom-font gradient-text text-left">
+          <a class="no-underline hover:underline ml-35 font" href="./">
+            bvbblz
+          </a>
+        </h1>
+      </div>
+
+      <div class="content3">
+        <div class="stacked-images">
+          <img
+            src="https://framerusercontent.com/images/qfCyoYPm6SpwfSGf2rZ2cONGP7s.png?scale-down-to=512"
+            alt="img1"
+          />
+          <img
+            src="https://framerusercontent.com/images/2dceS3hcjWf6ZHYggFVWdmIh2M.png"
+            alt="img2"
+          />
+          <img
+            src="https://framerusercontent.com/images/JamZRy3Eoy7I7J0Ak3YyoQX2z4.png"
+            alt="img3"
+          />
+        </div>
+      </div>
+      <div class="c1 w-[50vh] ml-10 mt-[30vh]">
+        <h1>
+          Seamlessly combining workout tracking, personalized trainer
+          connections, and cutting-edge AI analysis, the app empowers you to
+          elevate your fitness journey like never before.
+        </h1>
+
+        <button
+          class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 mt-5"
+        >
+          <span
+            class="relative px-10 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+          >
+            <h1 class="text-2xl">OPEN ON PHONE</h1>
+          </span>
+        </button>
+      </div>
+      <div class="imag2 relative">
+        <img
+          src="https://framerusercontent.com/images/3MzwKk1JBXg5wDQxBqreSUDDXhg.jpg?scale-down-to=512"
+          alt="img2"
+          class="absolute top-0 left-0 w-[40vh] h-auto object-cover z-10 rounded-s-full"
+        />
+        <div class="box relative z-0 ml-32 mt-20">
+          <h1
+            class="pl-72 text-white pt-24 text-base tracking-normal normal-case no-underline leading-snug text-left"
+          >
+            Personal training & tracking like never before
+          </h1>
+          <h2 class="pl-72 pt-10 text-white">
+            THE ONLY FITNESS APP YOU'LL EVER NEED
+          </h2>
+          <img
+            src="https://framerusercontent.com/images/AWYTB2rG6KsU91lHPX82tIOjMvo.jpg?scale-down-to=512"
+            alt=""
+            class="absolute -bottom-20 right-6 w-[48vh] h-[40vh] object-cover z-20 border-r-amber-200"
+          />
+        </div>
+      </div>
+      <div id="l1" class="container flex justify-center align-text-top">
+        <div id="content-container" class="content-container pr-[45vh]">
+          <div id="content1" class="content p-20 pl-[20vh]">
+            <h1 class="text-2xl font-bold">WORLD RENOWNED TRAINERS ON A SUB</h1>
+            <p class="pt-2">
+              Choose from a roster of globally acclaimed trainers, each offering
+              personalized regimens tailored to your goals. Whether you're
+              aiming for strength, agility, or a complete body transformation,
+              the subscription unlocks a world of expertise.
+            </p>
+          </div>
+          <div id="content2" class="content p-20 hidden pl-[22vh]">
+            <h1 class="text-2xl font-bold">
+              TRACK YOUR PROGRESS LIKE NEVER BEFORE
+            </h1>
+            <p>
+              Monitor your workouts, set goals, and record your achievements AND
+              take it a step further with powerful Al analytics. Receive
+              in-depth insights into your performance, discover patterns, and
+              receive personalized recommendations.
+            </p>
+          </div>
+          <div id="content3" class="content p-20 hidden pl-[22vh]">
+            <h1 class="text-2xl font-bold">REAL STORIES, REAL RESULTS</h1>
+            <p>
+              But don't take our word for it. Hear the stories of users just
+              like you. who've embarked on their fitness journeys and achieved
+              remarkable results. Read and share your own experiences, providing
+              valuable insights and motivation to the BVBBLZ fitness family.
+            </p>
+          </div>
+        </div>
+        <div id="arrow">
+          <button
+            class="arrow-button pr-[60vh] pt-20 text-xl cursor-pointer"
+            onclick="toggleContent('up')"
+          >
+            ▲
+          </button>
+          <button
+            class="arrow-button pt-20 text-xl cursor-pointer"
+            onclick="toggleContent('down')"
+          >
+            ▼
+          </button>
+        </div>
+      </div>
+      <div class="download flex justify-end pr-20">
+        <button
+          type="button"
+          class="py-2.5 px-5 me-2 mb-2 font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-500 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 text-2xl p-8"
+        >
+          DOWNLOAD APP
+        </button>
+      </div>
+      <div class="image3 flex justify-center align-middle mt-14 ml-7">
+        <div
+          class="max-w-sm border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-[300px] h-[300px]"
+        >
+          <img
+            class="rounded-lg w-full h-auto object-cover"
+            src="https://framerusercontent.com/images/qfCyoYPm6SpwfSGf2rZ2cONGP7s.png"
+            alt="img1"
+          />
+        </div>
+        <div
+          class="max-w-sm border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-[300px] h-[300px]"
+        >
+          <img
+            class="rounded-lg w-full h-auto object-cover"
+            src="https://framerusercontent.com/images/2dceS3hcjWf6ZHYggFVWdmIh2M.png"
+            alt="img1"
+          />
+        </div>
+        <div
+          class="max-w-sm border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-[300px] h-[300px]"
+        >
+          <img
+            class="rounded-lg w-full h-auto object-cover"
+            src="https://framerusercontent.com/images/cof2SUoTtbiPXnJcfnbicHsFM.png"
+            alt="img1"
+          />
+        </div>
+        <div
+          class="max-w-sm border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-[300px] h-[300px]"
+        >
+          <img
+            class="rounded-lg w-full h-auto object-cover"
+            src="https://framerusercontent.com/images/JamZRy3Eoy7I7J0Ak3YyoQX2z4.png"
+            alt="img1"
+          />
+        </div>
+      </div>
+      <div class="h-10vh w-screen mt-[35vh] c123">
+        <section class="text-gray-600 body-font overflow-hidden">
+          <div class="container1 px-5 py-24 mx-auto">
+            <div class="flex flex-wrap">
+              <!-- Content on the left side -->
+              <div class="p-12 md:w-1/2 flex flex-col items-start">
+                <h1 class="text-3xl font-bold mb-4">
+                  BVBBLZ HELPED ME GET BACK ON TRACK
+                </h1>
+                <p class="leading-relaxed mb-8 text-black">
+                  I started using BVBBLZ during the first lockdown. I had no
+                  motivation whatsoever to stay active and the live sessions
+                  were a game-changer, offering a sense of community and
+                  motivation I desperately needed. Thanks to BVBBLZ, I not only
+                  got back on track but surpassed my fitness goals. This app has
+                  been a lifeline during these challenging times, and I can't
+                  recommend it enough.
+                </p>
+                <h3 class="text-xl font-semibold">Marie, English teacher</h3>
+              </div>
+
+              <!-- Images on the right side -->
+              <div
+                class="md:w-1/2 flex flex-col md:flex-row items-center gap-4 p-4"
+              >
+                <!-- Image 1 -->
+                <div class="relative w-full">
+                  <img
+                    class="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
+                    src="https://framerusercontent.com/images/vQ9Tk8ecEiUJ4zE6MchfEVqf8.jpg?scale-down-to=512"
+                    alt="Image 1"
+                  />
+                </div>
+
+                <!-- Image 2 -->
+                <div class="relative w-full">
+                  <img
+                    class="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
+                    src="https://framerusercontent.com/images/vQ9Tk8ecEiUJ4zE6MchfEVqf8.jpg?scale-down-to=512"
+                    alt="Image 2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <h1 class="text-4xl -mt-4 text-center font-bold">AND THERE'S MORE</h1>
+      <section class="overflow-x-hidden -mt-4">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="lg:w-4/5 mx-auto flex items-center flex-wrap">
+            <img
+              alt="ecommerce"
+              class="w-[15vw] h-fit sm:w-[15vw] lg:w-1/2 w-full lg:h-auto h-64"
+              src="https://framerusercontent.com/images/c3F94lRZohioDlm0RbeAkUgbzmk.png"
+            />
+            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+              <h1 class="text-4xl mb-1 font-semibold">
+                AI SUGESTIONS BASED ON YOUR DATA
+              </h1>
+              <div class="flex mb-4">
+                <p class="leading-relaxed text-xl">
+                  Our AI understands your unique progress and goals. Whether
+                  it's suggesting new workouts, optimizing your routine, or even
+                  predicting potential plateaus, BVBBLZ's AI ensures that every
+                  step of your fitness journey is precisely tailored to your
+                  needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="overflow-x-hidden">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="lg:w-4/5 mx-auto flex items-center flex-wrap">
+            <img
+              alt="ecommerce"
+              class="w-[15vw] h-fit sm:w-[15vw] lg:w-1/2 w-full lg:h-auto h-64"
+              src="https://framerusercontent.com/images/tjjv4q6IODBUXHJ3kNPwUw3R9F0.png"
+            />
+            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+              <h1 class="text-4xl mb-1 font-semibold">
+                START FREE, UPGRADE AT ANY POINT
+              </h1>
+              <div class="flex flex-col justify-start mb-4">
+                <p class="leading-relaxed text-xl">
+                  Start your fitness journey with us absolutely free. No strings
+                  attached. Explore the app, track your workouts, and experience
+                  the power of our community without any initial commitment. And
+                  when you're ready to unlock even more premium features and
+                  personalized training options, upgrading is just a tap away.
+                </p>
+                <button
+                  class="mt-6 uppercase px-8 py-2 bg-white font-semibold rounded-full border w-fit hover:animate-bounce"
+                >
+                  Download Now
+                  <i class="ri-download-2-line text-xl"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="overflow-x-hidden">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="lg:w-4/5 mx-auto flex items-center flex-wrap">
+            <img
+              alt="ecommerce"
+              class="w-[15vw] h-fit sm:w-[15vw] lg:w-1/2 w-full lg:h-auto h-64"
+              src="https://framerusercontent.com/images/c3F94lRZohioDlm0RbeAkUgbzmk.png"
+            />
+            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+              <h1 class="text-4xl mb-1 font-semibold">
+                PRO PACKAGES FROM EXPERTS
+              </h1>
+              <div class="flex mb-4">
+                <p class="leading-relaxed text-xl">
+                  Our premium trainers, renowned for their expertise, create
+                  specialized packages to help you reach your fitness goals
+                  faster and more effectively. From personalized workout plans
+                  to nutrition guides, you'll have the tools and knowledge you
+                  need for exceptional results.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div>
+        <h2 class="text-7xl font-medium mt-20 ml-[10vw]">
+          THOUGHTFUL PRICING <br />
+          DESIGNED FOR YOU
+        </h2>
+        <p class="text-xl ml-[10vw]">
+          Start free upgrade anytime. Transparent pricing that empowers you to
+          achieve <br />
+          your goals, your way.
+        </p>
+      </div>
+
+      <!-- CARDS  -->
+      <section class="mt-4 flex justify-center gap-10 flex-wrap">
+        <div
+          id="l2"
+          class="w-fit max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700"
+        >
+          <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
+            Standard plan
+          </h5>
+          <div class="flex items-baseline text-gray-900 dark:text-white">
+            <span class="text-3xl font-semibold">$</span>
+            <span class="text-5xl font-extrabold tracking-tight">49</span>
+            <span
+              class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400"
+              >/month</span
+            >
+          </div>
+          <ul role="list" class="space-y-5 my-7">
+            <li class="flex items-center">
+              <svg
+                class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span
+                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
+                >2 team members</span
+              >
+            </li>
+            <li class="flex">
+              <svg
+                class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span
+                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
+                >20GB Cloud storage</span
+              >
+            </li>
+            <li class="flex">
+              <svg
+                class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span
+                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
+                >Integration help</span
+              >
+            </li>
+            <li class="flex line-through decoration-gray-500">
+              <svg
+                class="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span
+                class="text-base font-normal leading-tight text-gray-500 ms-3"
+                >Sketch Files</span
+              >
+            </li>
+            <li class="flex line-through decoration-gray-500">
+              <svg
+                class="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span
+                class="text-base font-normal leading-tight text-gray-500 ms-3"
+                >API Access</span
+              >
+            </li>
+            <li class="flex line-through decoration-gray-500">
+              <svg
+                class="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span
+                class="text-base font-normal leading-tight text-gray-500 ms-3"
+                >Complete documentation</span
+              >
+            </li>
+            <li class="flex line-through decoration-gray-500">
+              <svg
+                class="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span
+                class="text-base font-normal leading-tight text-gray-500 ms-3"
+                >24×7 phone & email support</span
+              >
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+          >
+            Choose plan
+          </button>
+        </div>
+
+        <div
+          class="w-fit max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700"
+        >
+          <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
+            Standard plan
+          </h5>
+          <div class="flex items-baseline text-gray-900 dark:text-white">
+            <span class="text-3xl font-semibold">$</span>
+            <span class="text-5xl font-extrabold tracking-tight">49</span>
+            <span
+              class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400"
+              >/month</span
+            >
+          </div>
+          <ul role="list" class="space-y-5 my-7">
+            <li class="flex items-center">
+              <svg
+                class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span
+                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
+                >2 team members</span
+              >
+            </li>
+            <li class="flex">
+              <svg
+                class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span
+                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
+                >20GB Cloud storage</span
+              >
+            </li>
+            <li class="flex">
+              <svg
+                class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span
+                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
+                >Integration help</span
+              >
+            </li>
+            <li class="flex line-through decoration-gray-500">
+              <svg
+                class="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span
+                class="text-base font-normal leading-tight text-gray-500 ms-3"
+                >Sketch Files</span
+              >
+            </li>
+            <li class="flex line-through decoration-gray-500">
+              <svg
+                class="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span
+                class="text-base font-normal leading-tight text-gray-500 ms-3"
+                >API Access</span
+              >
+            </li>
+            <li class="flex line-through decoration-gray-500">
+              <svg
+                class="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span
+                class="text-base font-normal leading-tight text-gray-500 ms-3"
+                >Complete documentation</span
+              >
+            </li>
+            <li class="flex line-through decoration-gray-500">
+              <svg
+                class="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span
+                class="text-base font-normal leading-tight text-gray-500 ms-3"
+                >24×7 phone & email support</span
+              >
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+          >
+            Choose plan
+          </button>
+        </div>
+
+        <div
+          class="w-fit max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700"
+        >
+          <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
+            Standard plan
+          </h5>
+          <div class="flex items-baseline text-gray-900 dark:text-white">
+            <span class="text-3xl font-semibold">$</span>
+            <span class="text-5xl font-extrabold tracking-tight">49</span>
+            <span
+              class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400"
+              >/month</span
+            >
+          </div>
+          <ul role="list" class="space-y-5 my-7">
+            <li class="flex items-center">
+              <svg
+                class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span
+                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
+                >2 team members</span
+              >
+            </li>
+            <li class="flex">
+              <svg
+                class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span
+                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
+                >20GB Cloud storage</span
+              >
+            </li>
+            <li class="flex">
+              <svg
+                class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span
+                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
+                >Integration help</span
+              >
+            </li>
+            <li class="flex line-through decoration-gray-500">
+              <svg
+                class="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span
+                class="text-base font-normal leading-tight text-gray-500 ms-3"
+                >Sketch Files</span
+              >
+            </li>
+            <li class="flex line-through decoration-gray-500">
+              <svg
+                class="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span
+                class="text-base font-normal leading-tight text-gray-500 ms-3"
+                >API Access</span
+              >
+            </li>
+            <li class="flex line-through decoration-gray-500">
+              <svg
+                class="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span
+                class="text-base font-normal leading-tight text-gray-500 ms-3"
+                >Complete documentation</span
+              >
+            </li>
+            <li class="flex line-through decoration-gray-500">
+              <svg
+                class="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+                />
+              </svg>
+              <span
+                class="text-base font-normal leading-tight text-gray-500 ms-3"
+                >24×7 phone & email support</span
+              >
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+          >
+            Choose plan
+          </button>
+        </div>
+      </section>
+
+      <div class="imag2 relative">
+        <img
+          src="https://framerusercontent.com/images/3MzwKk1JBXg5wDQxBqreSUDDXhg.jpg?scale-down-to=512"
+          alt="img2"
+          class="absolute top-0 left-0 w-[35vh] h-auto object-cover z-10"
+        />
+        <div class="box relative z-0 ml-32 mt-20">
+          <h1
+            class="pl-72 text-white pt-24 text-base tracking-normal normal-case no-underline leading-snug text-left"
+          >
+            Personal training & tracking like never before
+          </h1>
+          <h2 class="pl-72 pt-10 text-white">
+            THE ONLY FITNESS APP YOU'LL EVER NEED
+          </h2>
+          <img
+            src="https://framerusercontent.com/images/AWYTB2rG6KsU91lHPX82tIOjMvo.jpg?scale-down-to=512"
+            alt=""
+            class="absolute -bottom-20 -right-14 w-[40vh] h-auto object-cover z-20 border-r-amber-200"
+          />
+        </div>
+      </div>
+      <div class="content3">
+        <div class="stacked-images">
+          <img
+            src="https://framerusercontent.com/images/qfCyoYPm6SpwfSGf2rZ2cONGP7s.png?scale-down-to=512"
+            alt="img1"
+          />
+          <img
+            src="https://framerusercontent.com/images/2dceS3hcjWf6ZHYggFVWdmIh2M.png"
+            alt="img2"
+          />
+          <img
+            src="https://framerusercontent.com/images/JamZRy3Eoy7I7J0Ak3YyoQX2z4.png"
+            alt="img3"
+          />
+        </div>
+      </div>
+      <div class="c1 w-[50vh] ml-10 mt-[30vh]">
+        <h1>
+          Seamlessly combining workout tracking, personalized trainer
+          connections, and cutting-edge AI analysis, the app empowers you to
+          elevate your fitness journey like never before.
+        </h1>
+
+        <button
+          class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 mt-5"
+        >
+          <span
+            class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+          >
+            Open On Phone
+          </span>
+        </button>
+      </div>
+      <footer class="text-gray-600 body-font">
+        <div
+          class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col"
+        >
+          <div
+            class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10"
+          >
+            <a
+              class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+            >
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNzEvRVQqJ9osuD3VN8v9dL6H6_VTFDylAyA&s"
+                alt="Tailblocks Logo"
+                class="w-14 h-14 text-white p-2 bg-gray-800 rounded-full"
+              />
+              <span class="ml-3 text-xl">Fitness Gym</span>
+            </a>
+
+            <p class="mt-2 text-sm text-black">
+              Receive updated from our blog,app & offers,directly to your inbox
+            </p>
+          </div>
+          <div
+            class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first"
+          >
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2
+                class="title-font font-medium text-gray-900 tracking-widest text-xl mb-3"
+              >
+                INFO
+              </h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800"
+                    >Terms & Conditions</a
+                  >
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800"
+                    >Privacy policy</a
+                  >
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800"
+                    >iphone download</a
+                  >
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800"
+                    >Android download</a
+                  >
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2
+                class="title-font font-medium text-gray-900 tracking-widest text-xl mb-3"
+              >
+                CONTACT
+              </h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800"
+                    >Press enquiries</a
+                  >
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Support</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Email us</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2
+                class="title-font font-medium text-gray-900 tracking-widest text-xl mb-3"
+              >
+                OTHER
+              </h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Careers</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Blog</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Pricing</a>
+                </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div
+            class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row"
+          >
+            <p class="text-gray-500 text-sm text-center sm:text-left">
+              © 2023 BVBBLZ all rights reserved
+            </p>
+            <span
+              class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start"
+            >
+              <a class="text-gray-500">
+                <svg
+                  fill="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                  ></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg
+                  fill="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                  ></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                  ></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg
+                  fill="currentColor"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="0"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="none"
+                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                  ></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
